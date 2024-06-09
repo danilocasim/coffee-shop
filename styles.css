@@ -1,0 +1,77 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  color: #ffffff;
+}
+
+.landing-page {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 56%, #160b00 100%),
+    url(images/coffee_image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.logo {
+  font-family: "Clicker Script", serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  column-gap: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.landing-page-content {
+  display: flex;
+  flex-direction: column;
+  margin: 120px 230px 0;
+  row-gap: 10px;
+}
+
+.brand-name {
+  font-family: "Clicker Script", serif;
+  font-size: 100px;
+}
+
+.heading-description {
+  max-width: 500px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 5px 20px;
+  background-color: #f9c06a;
+  width: 120px;
+  border-radius: 50px;
+  color: #1e1e1e;
+}
+
+.featured-section {
+  height: 100vh;
+  background-color: #160b00;
+}
