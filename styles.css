@@ -1,3 +1,11 @@
+:root {
+  --brown: #160b00;
+  --btn: #ffcf9a;
+  --text-content: #ffcf9ab3;
+  --text-heading: #ffebd6;
+  --white: #ffffff;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -13,7 +21,7 @@ html {
 
 body {
   font-family: "Playfair Display", serif;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .landing-page {
@@ -21,7 +29,7 @@ body {
     url(images/coffee_image.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 100dvh;
 }
 
 .logo {
@@ -30,9 +38,10 @@ body {
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 100px;
+  padding: 0 100px;
 }
 
 ul {
@@ -49,8 +58,9 @@ a {
 .landing-page-content {
   display: flex;
   flex-direction: column;
-  margin: 120px 230px 0;
+  margin: 180px 100px 0;
   row-gap: 10px;
+  color: var(--text-heading);
 }
 
 .brand-name {
@@ -60,18 +70,85 @@ a {
 
 .heading-description {
   max-width: 500px;
+  font-weight: normal;
 }
 
 .btn {
   display: inline-block;
-  padding: 5px 20px;
-  background-color: #f9c06a;
-  width: 120px;
+  padding: 10px 20px;
+  width: 165px;
+  border: 2px solid var(--btn);
   border-radius: 50px;
-  color: #1e1e1e;
+  color: var(--btn);
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: var(--btn);
+  color: var(--brown);
+  transition: 0.3s ease-in;
 }
 
 .featured-section {
-  height: 100vh;
-  background-color: #160b00;
+  height: 100dvh;
+  background-color: var(--brown);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.featured-section h1 {
+  color: var(--text-heading);
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.featured-section p {
+  font-weight: normal;
+  color: var(--text-content);
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  gap: 25px;
+}
+
+.item {
+  background-color: var(--text-content);
+  height: 280px;
+  width: 280px;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 50px;
+  flex: 1;
+}
+
+.item-title h2 {
+  color: var(--brown);
+  font-size: 30px;
+}
+
+.item-description p {
+  font-size: 20px;
+  color: var(--brown);
+}
+
+span.block {
+  margin: 20px 0;
+  display: block;
+  font-size: 30px;
+  color: var(--text-heading);
+}
+
+.btn-contacts {
+  width: 170px;
 }
