@@ -169,7 +169,7 @@ span.block {
     url(images/coffee-bg.png) no-repeat right 0 center / cover var(--brown);
   box-shadow: inset 0 -412px 500px -270px #160b00;
   gap: 20px;
-  padding: 20px;
+  padding: 10t0px;
 }
 
 .about-section h2 {
