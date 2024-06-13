@@ -106,7 +106,7 @@ a {
   flex-direction: column;
 }
 
-.featured-section h1 {
+.featured-section h2 {
   color: var(--text-heading);
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 500;
@@ -123,7 +123,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 50px 50px;
+  margin: 50px;
   gap: 25px;
 }
 
@@ -188,40 +188,70 @@ span.block {
 }
 
 .products-gallery {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   min-height: 100dvh;
   background-color: var(--brown);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.products-gallery .heading {
+  color: var(--text-heading);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.products-gallery .description {
+  font-weight: normal;
+  color: var(--text-content);
+  text-align: center;
+}
+
+.coffee-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.coffee-container {
+  background-color: var(--brown);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--btn);
+  margin: 50px 0;
+}
+
+.products-gallery img {
+  height: auto;
+  width: 300px;
+}
+
+.coffee-content {
+  text-align: center;
   color: var(--text-heading);
 }
 
-.products-gallery h2 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: 500;
-  text-align: center;
-  font-family: "Flayfair Display", serif;
+.coffee-content .brown {
+  color: var(--text-content);
 }
 
-.gallery {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 75rem;
-  gap: 50px;
-  margin: 25px 0;
+.products-gallery a {
+  text-decoration: none;
+  background-color: var(--btn);
+  color: var(--brown);
+  padding: 10px 20px;
+  border-radius: 50px;
+  margin: 15px 0 -20px;
 }
 
-.gallery img {
-  height: 300px;
-  border-radius: 10px;
-  display: inline-block;
-}
-
-.btn-menu {
-  margin: 25px 0;
-  padding: 10px 28px;
-  width: 250px;
+.products-gallery a:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease-in;
 }
