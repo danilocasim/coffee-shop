@@ -44,6 +44,8 @@ body {
 }
 
 nav {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -169,4 +171,22 @@ iframe {
   min-width: 600px;
   min-height: 600px;
   border: none;
+}
+
+footer {
+  min-height: 50dvh;
+  background-color: #160b00;
+}
+
+.footer {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5) 56%,
+      #160b00 100%
+    ),
+    url(../images/footer-bg.jpg);
+  height: 25dvh;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--brown);
 }
