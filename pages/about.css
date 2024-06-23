@@ -1,0 +1,199 @@
+:root {
+  --brown: #160b00;
+  --btn: #ffcf9a;
+  --text-content: #ffcf9ab3;
+  --text-heading: #ffebd6;
+  --white: #ffffff;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+}
+
+.logo {
+  font-family: "Clicker Script", serif;
+}
+
+.landing-page {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.7) 56%,
+      #160b00 100%
+    ),
+    url(../images/about-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100dvh;
+  color: var(--text-heading);
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0 100px;
+  background-color: var(--brown);
+  color: var(--white);
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  column-gap: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand-name {
+  font-family: "Clicker Script", serif;
+  font-size: clamp(5rem, 7vw, 8rem);
+  margin-top: 200px;
+  align-self: flex-start;
+  padding-left: 100px;
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  min-height: 300dvh;
+  background-color: var(--brown);
+  color: var(--text-content);
+  flex-wrap: wrap;
+}
+
+.story-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.content {
+  max-width: 500px;
+}
+
+.content h3 {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--btn);
+  line-height: 1.2em;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.content h2 {
+  color: var(--text-heading);
+  line-height: 1.2;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+
+.content p {
+  text-align: justify;
+  padding-bottom: 1em;
+}
+
+.image img,
+.values-image img {
+  height: auto;
+  width: 400px;
+}
+
+.values-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.values-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.values-heading h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 400;
+  color: var(--text-heading);
+  text-align: center;
+}
+
+.divider {
+  height: 3px;
+  width: 50px;
+  background-color: var(--text-content);
+}
+
+.values-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.values-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 100px;
+}
+
+.values-content {
+  width: 500px;
+}
+
+.values-content h2 {
+  font-size: clamp(2.75rem, 5vw, 4.5rem);
+  color: var(--text-heading);
+  font-family: "Clicker Script", sans-serif;
+  font-weight: 400;
+}
+
+.values-content em {
+  display: block;
+  font-size: clamp(1.25rem, 1.25vw, 1.75rem);
+  padding: 10px 0;
+  color: var(--text-heading);
+  width: 350px;
+}
+
+.vision {
+  flex-direction: row;
+}

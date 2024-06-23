@@ -100,7 +100,7 @@ a {
 .item {
   background-color: var(--text-content);
   height: 250px;
-  width: 400px;
+  width: 360px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
