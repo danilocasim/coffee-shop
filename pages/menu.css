@@ -26,6 +26,7 @@ body {
 
 .logo {
   font-family: "Clicker Script", serif;
+  color: var(--white);
 }
 
 .landing-page {
@@ -44,7 +45,7 @@ body {
   flex-direction: column;
 }
 
-.landing-page > nav {
+.side-nav > nav {
   position: sticky;
   top: 0;
   display: flex;
@@ -54,6 +55,56 @@ body {
   padding: 0 100px;
   background-color: var(--brown);
   color: var(--white);
+}
+
+.landing-page > nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0 100px;
+  background-color: var(--brown);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.nav-links a {
+  position: relative;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.nav-links a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--white);
+  transition: 0.3s;
+}
+
+.nav-links a:hover::before {
+  width: 100%;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: var(--white);
+  margin: 5px;
+  transition: all 0.3s ease;
 }
 
 ul {
@@ -85,7 +136,8 @@ a {
   padding-left: 100px;
   width: 400px;
   position: sticky;
-  top: 10%;
+  top: 20%;
+  margin-top: 120px;
 }
 
 .side-nav ul {
@@ -187,4 +239,124 @@ span.link-bold {
   display: flex;
   flex-direction: column;
   gap: 100px;
+}
+
+/* PHONE */
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .landing-page {
+    margin: 0 -100px;
+  }
+  .about-section {
+    margin: 0 -100px;
+    padding: 0 30%;
+  }
+  .side-nav {
+    display: none;
+  }
+  .content h1 {
+    text-align: center;
+  }
+  .content p {
+    max-width: 95%;
+  }
+  .image img {
+    height: auto;
+    width: 95%;
+  }
+  .values-image img {
+    height: auto;
+    width: 95%;
+  }
+  .values-heading {
+    text-align: center;
+  }
+  .content nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  .landing-page > nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+  }
+  .coffee-content {
+    text-align: center;
+  }
+  .coffee-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  .coffee {
+    width: 25%;
+  }
+  .coffee p {
+    width: 150%;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: var(--brown);
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .products-gallery {
+    text-align: center;
+  }
+  .burger,
+  .logo {
+    display: block;
+    cursor: pointer;
+    z-index: 6;
+  }
+  .brand-name {
+    padding: 0 25%;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line-1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line-2 {
+  opacity: 0;
+}
+
+.toggle .line-3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.nav-active {
+  transform: translateX(0%);
 }
