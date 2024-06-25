@@ -26,3 +26,15 @@ const navSlide = () => {
 };
 
 navSlide();
+
+// PRELOADER
+
+const startTime = performance.now();
+const loader = document.getElementById("preloader");
+const line = document.querySelector(".line");
+
+window.addEventListener("load", () => {
+  const loadTime = (performance.now() - startTime) / 1000; // in seconds
+  line.style.setProperty("--loading-duration", `${loadTime}s `);
+  loader.style.display = "none";
+});
