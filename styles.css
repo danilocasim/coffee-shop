@@ -269,13 +269,14 @@ span.block {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  border: 2px solid var(--btn);
   margin: 50px 0;
 }
 
 .products-gallery img {
   height: auto;
-  width: 300px;
+  width: 200px;
+  background-color: #ffcf9a;
+  border-radius: 50%;
 }
 
 .coffee-content {
@@ -285,20 +286,6 @@ span.block {
 
 .coffee-content .brown {
   color: var(--text-content);
-}
-
-.products-gallery a {
-  text-decoration: none;
-  background-color: var(--btn);
-  color: var(--brown);
-  padding: 10px 20px;
-  border-radius: 50px;
-  margin: 15px 0 -20px;
-}
-
-.products-gallery a:hover {
-  transform: scale(1.1);
-  transition: 0.2s ease-in;
 }
 
 /* PRELOADER */
@@ -373,6 +360,7 @@ span.block {
   .about-section {
     margin: 0 -100px;
     padding: 0 35%;
+    padding-top: 100px;
   }
   nav {
     display: flex;
@@ -397,6 +385,7 @@ span.block {
   }
   .products-gallery {
     text-align: center;
+    padding-top: 100px;
   }
   .burger,
   .logo {

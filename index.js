@@ -38,3 +38,22 @@ window.addEventListener("load", () => {
   line.style.setProperty("--loading-duration", `${loadTime}s `);
   loader.style.display = "none";
 });
+
+// NAV MENU DRINKS AND FOODS
+
+document.addEventListener("DOMContentLoaded", function () {
+  const drinksMenu = document.getElementById("drinks-menu");
+  const foodsMenu = document.getElementById("foods-menu");
+  const drinksSection = document.getElementById("drinks-section");
+  const foodsSection = document.getElementById("foods-section");
+
+  drinksMenu.addEventListener("click", function () {
+    drinksSection.style.display = "block";
+    foodsSection.style.display = "none";
+  });
+
+  foodsMenu.addEventListener("click", function () {
+    foodsSection.style.display = "block";
+    drinksSection.style.display = "none";
+  });
+});

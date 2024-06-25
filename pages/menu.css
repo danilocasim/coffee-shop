@@ -306,12 +306,29 @@ span.link-bold {
   .landing-page {
     margin: 0 -100px;
   }
+  .landing-page > nav {
+    justify-content: space-around;
+  }
   .loading .line-box {
     width: 60%;
+  }
+  .brand-name {
+    margin-left: 50px;
+  }
+  .side-nav {
+    display: none;
+  }
+  .wrapper {
+    text-align: center;
   }
   .landing-page-content {
     margin-top: 20%;
     padding: 0 10%;
+  }
+  .coffee-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .about-section {
     margin: 0 -100px;
