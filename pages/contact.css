@@ -332,6 +332,9 @@ footer {
   .products-gallery {
     text-align: center;
   }
+  #preloader {
+    display: none;
+  }
   .burger,
   .logo {
     display: block;

@@ -393,6 +393,9 @@ span.block {
     cursor: pointer;
     z-index: 6;
   }
+  #preloader {
+    display: none;
+  }
 }
 
 .nav-active {
