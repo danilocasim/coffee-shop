@@ -119,7 +119,7 @@ a {
   background-color: var(--brown);
   justify-content: center;
   align-items: center;
-  padding: 0 10% 10%;
+  padding: 0 10% 10 × %;
 }
 
 .contact-section > h2 {

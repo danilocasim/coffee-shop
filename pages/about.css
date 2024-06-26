@@ -343,6 +343,9 @@ a {
   .values-image img {
     width: 90vw;
   }
+  .values-content {
+    max-width: 90vw;
+  }
 }
 
 .nav-active {
