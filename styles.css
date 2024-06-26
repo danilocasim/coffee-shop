@@ -428,3 +428,47 @@ span.block {
 .nav-active {
   transform: translateX(0%);
 }
+
+/* ANIMATION */
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+}
+
+.coffee-wrapper .hidden,
+.wrapper .hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100px);
+  transition: all 1s;
+}
+
+.coffee-wrapper .show,
+.wrapper .hidden {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.coffee-container:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.coffee-container:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.coffee-container:nth-child(4) {
+  transition-delay: 600ms;
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}

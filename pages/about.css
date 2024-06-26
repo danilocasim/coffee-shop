@@ -381,3 +381,14 @@ a {
 .nav-active {
   transform: translateX(0%);
 }
+
+/* ANIMATION */
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+}
