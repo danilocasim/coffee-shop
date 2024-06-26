@@ -22,7 +22,7 @@ const navSlide = () => {
   burger.addEventListener("click", () => {
     // toggle nav
     nav.classList.toggle("nav-active");
-
+    nav.style.display = "flex";
     // animate links
     navLinks.forEach((link, index) => {
       if (link.style.animation) {
