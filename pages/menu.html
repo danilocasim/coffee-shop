@@ -28,8 +28,93 @@
             </div>
         </div>
     </div>
+
+    <!-- BACKDROP -->
+    <div class="backdrop"></div>
+    <!-- SIDE CART -->
+
+    <div class="sidecart" id="sidecart">
+        <div class="cart-content">
+            <div class="cart-header">
+                <img src="../images/shopping-cart-outline-svgrepo-com.svg" style="width: 30px;" alt="">
+                <div class="header-title">
+                    <h2>Your Cart</h2>
+                    <span id="items-num">3</span>
+                </div>
+                <span id="close-btn" class="close-btn">&times;</span>
+            </div>
+            <div class="cart-items">
+                <!-- ITEM 1 -->
+                <div class="cart-item">
+                    <div class="remove-item">
+                        <span>&times;</span>
+                    </div>
+
+                    <div class="item-img">
+                        <img src="../images/Drinks/Cold Coffees/ColdBrew.png" alt="americano">
+                    </div>
+                    <div class="item-details">
+                        <p>Cold Brew</p>
+                        <strong>$14.00</strong>
+                        <div class="qty">
+                            <span>-</span>
+                            <strong>1</strong>
+                            <span>+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <div class="remove-item">
+                        <span>&times;</span>
+                    </div>
+
+                    <div class="item-img">
+                        <img src="../images/Drinks/Espresso/caramel-mach.png" alt="americano">
+                    </div>
+                    <div class="item-details">
+                        <p>Iced Caramel Macchiato</p>
+                        <strong>$14.00</strong>
+                        <div class="qty">
+                            <span>-</span>
+                            <strong>1</strong>
+                            <span>+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <div class="remove-item">
+                        <span>&times;</span>
+                    </div>
+
+                    <div class="item-img">
+                        <img src="../images/Drinks/Frappuccinos/JavaChipFrappuccino.png" alt="americano">
+                    </div>
+                    <div class="item-details">
+                        <p>Java Chip Frappuccino</p>
+                        <strong>$14.00</strong>
+                        <div class="qty">
+                            <span>-</span>
+                            <strong>1</strong>
+                            <span>+</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="cart-actions">
+                <div class="subtotal">
+                    <p>SUBTOTAL</p>
+                    <p>$<span id="subtotal-price">3896</span></p>
+                </div>
+                <button>View Cart</button>
+                <button>Checkout</button>
+            </div>
+        </div>
+    </div>
     <div class="container">
+
         <div class="landing-page">
+
             <nav>
                 <div class="logo">
                     <h1><a href="../index.html">Apex Aroma</a></h1>
@@ -56,6 +141,7 @@
                       >Contacts</a
                     >
                   </li>
+                  
                 </ul>
                 <div class="burger">
                   <div class="line-1"></div>
@@ -64,6 +150,10 @@
                 </div>
               </nav>
             <h1 class="brand-name">Our Menu</h1>
+            <button id="open-cart-btn">
+                <img src="../images/shopping-cart-outline-svgrepo-com.svg" alt="" style="width: 30px;">
+            </button>
+            
         </div>
         <div class="menu-section">
 
