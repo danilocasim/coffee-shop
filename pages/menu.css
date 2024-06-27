@@ -28,6 +28,19 @@ body {
   overflow-x: hidden;
 }
 
+#open-cart-btn,
+.header-title span,
+.remove-item,
+.item-details .qty span,
+.coffee-bg,
+.side-nav ul,
+#preloader,
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* SIDE CART */
 
 #open-cart-btn {
@@ -38,9 +51,6 @@ body {
   background-color: var(--btn);
   padding: 10px;
   border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
 }
 
@@ -108,9 +118,6 @@ body {
   background-color: #069fe6;
   border-radius: 50%;
   color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .cart-header .close-btn {
@@ -147,9 +154,6 @@ body {
   height: 20px;
   background-color: #ccc;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
 }
 
@@ -194,9 +198,6 @@ body {
   height: 30px;
   background-color: #fff;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 1.5rem;
   line-height: 1;
   cursor: pointer;
@@ -368,11 +369,8 @@ a {
 }
 
 .side-nav ul {
-  display: flex;
-  justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  justify-content: center;
   color: var(--text-content);
   gap: 20px;
 }
@@ -452,9 +450,6 @@ span.link-bold {
 .coffee-bg {
   background-color: var(--btn);
   max-width: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 50%;
 }
 
@@ -479,9 +474,6 @@ span.link-bold {
 /* PRELOADER */
 
 #preloader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   position: fixed;
   background-color: var(--brown);
@@ -502,9 +494,6 @@ span.link-bold {
 .loading {
   width: 100%;
   height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .loading .line-box {
