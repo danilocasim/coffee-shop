@@ -468,6 +468,14 @@ span.link-bold {
   gap: 100px;
 }
 
+.coffee button {
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: 700;
+  background-color: var(--btn);
+  cursor: pointer;
+}
+
 /* PRELOADER */
 
 #preloader {
