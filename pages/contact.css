@@ -248,6 +248,7 @@ iframe {
   color: var(--preloader);
   font-family: "Open Sans", Arial, sans-serif;
   font-size: clamp(1rem, 3vw, 1.5rem);
+  overflow-y: hidden;
 }
 
 #preloader img {
